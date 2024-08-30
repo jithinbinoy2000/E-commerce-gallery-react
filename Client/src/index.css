@@ -1,0 +1,20 @@
+body {
+  background:#f8f8f8; /* fallback for old browsers */
+   scroll-behavior: smooth;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 2px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ff0000a1;
+  border-radius: 16px;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(247, 247, 247, 0.349);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #00000091;
+}

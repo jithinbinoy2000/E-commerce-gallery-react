@@ -1,0 +1,196 @@
+.view-main-conatiner {
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  background-color:#ededed;
+  border-radius: 16px;
+
+}
+.view-image {
+}
+.view-details {
+}
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+}
+.image {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+.title-view {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  margin: 0.5rem;
+  font-weight: 700;
+  font-family: "Bungee Tint", sans-serif;
+}
+.description {
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  margin: 0.5rem;
+  font-size: 18px;
+  font-family: "Pridi", serif;
+}
+.price {
+  color: rgb(255, 17, 0);
+  font-size: 22px;
+  margin: 0.5rem;
+  font-family: "Pridi", serif;
+}
+.actual-price {
+  font-size: 16px;
+  margin-right: 0.5rem;
+  text-decoration: line-through;
+  font-family: "Pridi", serif;
+}
+.discount {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: "Pridi", serif;
+}
+.mrp {
+  font-size: 15px;
+  /* margin-left: .5rem; */
+  font-family: "Pridi", serif;
+}
+.category {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin: 0.5rem;
+  font-family: "Pridi", serif;
+}
+.return {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin: 0.5rem;
+  font-family: "Pridi", serif;
+}
+.ship {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin: 0.5rem;
+  font-family: "Pridi", serif;
+}
+.hr {
+  width: 90%;
+  border: solid 1px rgba(0, 0, 0, 0.459);
+  border-radius: 50%;
+}
+.rating {
+  margin-left: 0.5rem;
+  font-family: "Pridi", serif;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0.5rem;
+}
+.btn {
+  border: transparent;
+  background-color: rgba(7, 235, 83, 0.74);
+  border-radius: 12px;
+  padding: 0.3rem;
+  color: whitesmoke;
+  width: 5.9rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: "Rowdies";
+}
+.btn-fav {
+  background-color: rgba(255, 60, 0, 0.856);
+}
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.61);
+}
+@media (min-width: 1300px) {
+  .view-container {
+    grid-template-columns: 5fr 5fr;
+  }
+  .image {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+  }
+  .view-container {
+    width: 70%;
+    height: 60%;
+  }
+  .view-image {
+    display: flex;
+  }
+  .view-details {
+    margin-right: 2rem;
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 1400px) {
+  .view-container {
+    grid-template-columns: 2fr 2fr;
+  }
+  .image {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+  }
+  .view-container {
+    width: 50%;
+    height: 75%;
+  }
+  .view-image {
+    display: flex;
+  }
+  .view-details {
+    margin-right: 2rem;
+    margin-top: 3rem;
+  }
+}
+@media (max-width:620px){
+  .title-view{
+    font-size: 14px;
+  }
+  .description{
+font-size: 12px;
+  }
+  .price{
+    font-size: 14px;
+  }
+  .actual-price{
+    font-size: 13px;
+  }
+  .discount{
+    font-size: 13px;
+  }
+  .category,.return,.ship,.mrp{
+    font-size: 13px;
+  }
+  .view-container{
+    height: 85%;
+  }
+  .image{
+    width: 50%;
+  }
+
+}
+
